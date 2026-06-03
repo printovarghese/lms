@@ -9,7 +9,7 @@ jobs:
 deploy:
 runs-on: ubuntu-latest
 
-```
+
 steps:
   - name: Checkout Code
     uses: actions/checkout@v4
@@ -33,4 +33,4 @@ steps:
         sudo chown -R www-data:www-data /home/ubuntu/lms
         sudo systemctl reload nginx
         sudo systemctl restart php8.1-fpm
-```
+
